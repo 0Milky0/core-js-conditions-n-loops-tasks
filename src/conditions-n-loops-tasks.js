@@ -259,7 +259,7 @@ function getBalanceIndex(arr) {
     for (let j = 0; j < i; j += 1) {
       sumLeft += arr[j];
     }
-    for (let n = arr.length - 1; n > i; n -= 1) {
+    for (let n = i + 1; n < arr.length; n += 1) {
       sumRight += arr[n];
     }
     if (sumLeft === sumRight) return i;
